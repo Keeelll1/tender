@@ -161,18 +161,13 @@
 		height: 36px;
 	}
 	.plitka__icon--complex img {
-		width: 50px;
-		height: 50px;
+		width: 45px;
+		height: 45px;
 	}
 	.plitka__txt {
 		padding: 0 10px 0 10px;
 	}
-	.header__block {
-		flex-wrap: wrap;
-		padding-right: 0;
-		gap: 5%;
-	}
-	.header__logo {
+	.ogo {
 		margin-right: 0;
 	}
 	.regions__list li::before {
@@ -330,6 +325,11 @@
 	.ourTeam__element {
 		padding: 4%;
 	}
+
+	.plitka__icon--complex img {
+		width: 35px;
+		height: 35px;
+	}
 	.ourTeam__element img {
 		max-width: 77%;
 	}
@@ -345,6 +345,11 @@
 	.step-item {
 		padding: 20px 20px 25px;
 	}
+
+	.logo-text{
+		font-size: 16px;
+	}
+
 	.step-item-ln {
 		position: absolute;
 	}
@@ -364,7 +369,7 @@
 		display: block;
 	}
 	.container {
-		padding: 0 2%;
+		padding: 0;
 		max-width: 94%;
 	}
 	.numbers__list {
@@ -411,12 +416,7 @@
 		align-items: flex-end;
 		gap: 5px;
 	}
-	.footer-2-content,
-	.header__block {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 20px;
-	}
+
 	.privacy-policy {
 		justify-content: center;
 	}
@@ -427,7 +427,6 @@
 		min-width: 320px;
 	}
 	.container {
-		padding: 0 1%;
 		max-width: 96%;
 	}
 	.header__block {
