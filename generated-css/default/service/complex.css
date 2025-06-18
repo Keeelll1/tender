@@ -98,7 +98,6 @@ button.btn {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	white-space: normal;
 	transition: all 0.2s ease;
 	white-space: nowrap;
 }
@@ -114,8 +113,27 @@ button.btn:focus-visible {
 	outline-offset: 0;
 }
 
+.form__btn{
+	padding: 15px 40px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+	display: flex;
+	margin: 0 auto;
+}
+
+.form__btn:hover,
+.form__btn:active,
+.form__btn:focus-visible {
+	background-color: #5d7196;
+	color: #D1E8FF;
+}
+
 .btn.blue,
-button.btn.blue {
+button.btn.blue,
+.form__btn {
 	background-color: #5d7196;
 	color: #FFFFFF;
 }
@@ -724,14 +742,6 @@ section.hero {
 	padding: 15px 0;
 	box-shadow: 0 10px 15px rgb(186 204 219 / 30%);
 	background-color: #fff;
-	z-index: 3;
-}
-
-.header__block {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
 }
 
 .kep p.header__title {
@@ -1878,4 +1888,75 @@ small {
 .video__text {
 	margin: 20px 0;
 	font-size: 18px;
+}
+
+.overlay{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000000d0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .1s, visibility .1s;
+}
+
+.popup{
+	max-width: 90vw;
+	width: 500px;
+	padding: 45px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	max-height: 90vh;
+	overflow-y: scroll;
+	transform: scale(0);
+	transition: transform .2s;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.overlay.open{
+	visibility: visible;
+	opacity: 1;
+}
+
+body.no-scroll{
+	overflow: hidden;
+}
+
+.overlay.open .popup{
+	transform: scale(1);
+}
+
+.cross{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+.form{
+	width: 100%;
+}
+
+.form__input-box:not(:last-child){
+	margin-bottom: 20px;
+}
+
+.form__input-inp{
+	padding: 8px 20px;
+	width: 100%;
+	border: 1px solid #5d7196;
+	border-radius: 7px;
 }

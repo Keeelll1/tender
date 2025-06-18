@@ -258,11 +258,9 @@
                             </div>
                         </div>
                         <div class="easy__item easy__item--btn">
-                            <a href="/registration" data-widget="site/registration/Popup" data-form-class="Default_Form_Registration_ComplexPopup" data-auto-submit-on-empty-form="1">
-                                <button class="btn">
-                                    <span>Заказать консультацию</span>
-                                </button>
-                            </a>
+                            <button class="btn">
+                                <span>Заказать консультацию</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -919,60 +917,28 @@
                 </div>
             </div>
         </footer>
+        <div class="overlay">
+            <div class="popup">
+                <img src="/img/icons/cross.svg" alt="крестик" class="cross">
+                <h3>Введите данные для обратной связи</h3>
+                <form id="form" class="form" autocomplete="on">
+                    <div class="form__input-box">
+                        <input class="form__input-inp" type="text" id="name" name="name" placeholder="Введите ваше имя" autocomplete="on">
+                    </div>
+                    <div class="form__input-box">
+                        <input class="form__input-inp" type="tel" id="tel" name="tel" placeholder="+7 (___) ___-__-__" autocomplete="on">
+                    </div>
+                    <div class="form__input-box">
+                        <textarea class="form__input-inp" name="msg" id="msg" placeholder="Сообщение"></textarea>
+                    </div>
+                    <button class="form__btn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <script src="js/inputmask.min.js"></script>
+        <script src="js/just-validate.min.js"></script>
+        <script type="module" src="/js/main.js"></script>
         <script src="../js/libs/external/jquery/slick.min.js"></script>
-        <script>
-			$(document).ready(function(){
-				$('.ourTeam__slider').slick({
-					slidesToShow: 5,
-					slidesToScroll: 1,
-					autoplay: true,
-					autoplaySpeed: 5000,
-					arrows: false,
-					dots: true,
-					responsive: [
-						{
-							breakpoint: 1024,
-							settings: {
-								slidesToShow: 3
-							}
-						},
-						{
-							breakpoint: 768,
-							settings: {
-								slidesToShow: 2
-							}
-						},
-						{
-							breakpoint: 480,
-							settings: {
-								slidesToShow: 1
-							}
-						}
-					]
-				});
-			});
-
-			const toggleBlock = (
-				{selector = '', btnTrigger = null}
-			) => {
-				const searchSelector = btnTrigger ?? selector
-				$(searchSelector).click(function () {
-					const changesSelectorClass = btnTrigger ? $(selector) : $(this);
-					changesSelectorClass.toggleClass('active');
-				});
-			}
-
-			$(document).ready(function () {
-				const needToggleBlocks = [
-					{selector: '.faq__element'},
-					{selector: '.faq__spoiler', btnTrigger: '.faq-buttons'},
-				];
-
-				for (let selector in needToggleBlocks) {
-					toggleBlock(needToggleBlocks[selector]);
-				}
-			})
-		</script>
         <script src="../generated-js/application/default/landing/services.js?9e4beb"></script>
     </body>
 </html>
