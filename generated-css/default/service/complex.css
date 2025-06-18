@@ -359,6 +359,11 @@ section.hero {
 	line-height: normal;
 }
 
+.custom-li{
+	color: #5d7196;
+	margin-bottom: 5px;
+}
+
 .easy__text {
 	display: flex;
 	flex-direction: column;
