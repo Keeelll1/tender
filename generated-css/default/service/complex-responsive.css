@@ -98,6 +98,7 @@
 @media (max-width: 980px) {
 	.tariff__list {
 		grid-template-columns: 1fr 1fr;
+		gap: 40px;
 	}
 	.footer {
 		flex-direction: column;
