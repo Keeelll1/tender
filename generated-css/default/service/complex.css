@@ -317,7 +317,7 @@ section.hero {
 .easy__item {
 	display: flex;
 	flex-direction: column;
-	background: #f1f4f8;
+	background: #f0f0f2;
 	border-radius: 7px;
 	font-size: 18px;
 	line-height: normal;
@@ -363,6 +363,12 @@ section.hero {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+}
+
+.easy__text ul,
+.easy__text ul li {
+	list-style: none;
+	padding: 0;
 }
 
 .easy__text .easy__free.easy__accent {
@@ -664,13 +670,6 @@ section.hero {
 	margin-top: 20px;
 }
 
-.numbers__block {
-	background-image: url(/img/complex/bg_1920-5.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-radius: 7px;
-}
-
 .numbers__heading {
 	margin-bottom: 25px;
 }
@@ -747,20 +746,45 @@ section.hero {
 	z-index: 3;
 }
 
+.logo-img{
+	height: 40px;
+}
+
+.logo-wrapper{
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
 .header__block {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
+
 .header__logo a {
-	display: block;
+	display: flex;
+	gap: 8px;
+	align-items: center;
 }
 
 .header__logo img {
 	display: block;
 	width: auto;
 	height: 40px;
+}
+
+.logo-text{
+	color: #5d7196;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.line{
+	width: 1px;
+	height: 40px;
+	background-color: #5d7196;
 }
 
 .header__content {
@@ -1354,7 +1378,7 @@ section.plitka {
 
 .ourTeam__element .ourTeam__person-name {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 }
 
 .trust .ourTeam__person-name {
@@ -1581,7 +1605,7 @@ section.plitka {
 .tariff__list {
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin-top: 50px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
@@ -1604,7 +1628,8 @@ section.plitka {
 	background: #f1f4f8;
 	border-radius: 7px;
 	padding: 20px 25px 25px;
-	font-size: 16px
+	font-size: 16px;
+	position: relative;
 }
 
 .tariff__item--btn {
@@ -1612,15 +1637,23 @@ section.plitka {
 	align-items: flex-end;
 }
 
+.telephone{
+	color: inherit;
+}
+
 .tariff__item h3 {
 	background-color: #fff;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: normal;
 	color: #5d7196;
 	padding: 9px 20px;
 	margin: 2px 0 20px;
 	border-radius: 10px;
 	text-align: center;
+	border: 1px solid #5d7196;
+	position: absolute;
+	width: 90%;
+	top: -30px;
 }
 
 .tariff__item b {
@@ -1657,7 +1690,7 @@ section.plitka {
 
 .tariff-properties__list {
 	display: flex;
-	padding: 0 0 10px 20px;
+	padding: 30px 0 10px 20px;
 	flex-direction: column;
 	gap: 16px;
 }
@@ -1817,39 +1850,6 @@ section.plitka {
 	height: 32px;
 	border-radius: 5px;
 	font-size: 0;
-}
-
-.soc__item a.s_rt {
-	background: url(/i/soc/rt-grey.svg) center no-repeat;
-	background-size: cover;
-}
-
-.soc__item a.s_rt:hover {
-	background-image: url(/i/soc/rt.svg);
-}
-
-.soc__item a.s_vk {
-	background: url(/i/soc/vk-grey.svg) center no-repeat;
-}
-
-.soc__item a.s_vk:hover {
-	background-image: url(/i/soc/vk.svg);
-}
-
-.soc__item a.s_tg {
-	background: url(/i/soc/tg-grey.svg) center no-repeat;
-}
-
-.soc__item a.s_tg:hover {
-	background-image: url(/i/soc/tg.svg);
-}
-
-.soc__item a.s_ut {
-	background: url(/i/soc/ut-grey.svg) center no-repeat;
-}
-
-.soc__item a.s_ut:hover {
-	background-image: url(/i/soc/ut.svg);
 }
 /***/
 
