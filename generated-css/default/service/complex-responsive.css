@@ -10,12 +10,6 @@
 	}
 }
 
-@media (max-width: 1156px) {
-	.steps__block {
-		flex: 0 0 683px;
-	}
-}
-
 @media (max-width: 1149px) {
 	.plitka__block {
 		grid-template-columns: 1fr 1fr;
@@ -70,17 +64,11 @@
 	.faq__question {
 		max-width: 80%;
 	}
-	.cases__content {
-		grid-template-columns: 1fr 44%;
-	}
 	.ourTeam__element {
 		padding: 8%;
 	}
 	.trust .ourTeam__element {
 		padding: 0;
-	}
-	.regions__list li::before {
-		top: 21%;
 	}
 	.hero__button {
 		margin-top: 25px;
@@ -113,8 +101,6 @@
 
 @media (max-width: 768px) {
 	.hero__banner,
-	.eis .hero__banner--gray,
-	.kep .hero__banner--gray,
 	.turnkey-tender-support__banner	{
 		padding: 40px 26px;
 	}
@@ -162,23 +148,6 @@
 	.plitka__txt {
 		padding: 0 10px 0 10px;
 	}
-	.ogo {
-		margin-right: 0;
-	}
-	.regions__list li::before {
-		left: 3px;
-	}
-	.regions__list li {
-		flex: 0 0 44%;
-		margin-bottom: 0;
-		font-size: 14px;
-	}
-	.cases__content {
-		grid-template-columns: 1fr;
-	}
-	.cases__banner {
-		display: none;
-	}
 	.inside__content {
 		flex-wrap: wrap;
 		margin: 0;
@@ -217,8 +186,7 @@
 	.numbers__list {
 		padding: 30px 14px;
 	}
-	.turnkey-tender-support__block,
-	.kep .turnkey-tender-support__block {
+	.turnkey-tender-support__block {
 		grid-template-columns: 1fr;
 	}
 	.turnkey-tender-support__img {
@@ -236,7 +204,6 @@
 		margin: 40px 0;
 	}
 	.hero__banner, .eis .hero__banner--gray,
-	.kep .hero__banner--gray,
 	.turnkey-tender-support__banner {
 		padding: 26px;
 	}
@@ -343,25 +310,6 @@
 
 	.logo-text{
 		font-size: 16px;
-	}
-
-	.step-item-ln {
-		position: absolute;
-	}
-	.step-item-head {
-		margin-left: 14px;
-	}
-	.step-item-head a {
-		font-weight: 400;
-		font-size: 16px;
-		margin-bottom: 10px;
-		padding-left: 1rem;
-	}
-	.regions__list li {
-		flex: 0 0 100%;
-	}
-	.steps__content {
-		display: block;
 	}
 	.container {
 		padding: 0;
