@@ -159,7 +159,7 @@ section.hero {
 }
 
 .hero__banner {
-	background-image: url('/img/back.jpg');
+	background-image: url('/img/back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -310,7 +310,7 @@ section.hero {
 }
 
 .easy__item.easy__item--btn {
-	background-image: url('/img/back.jpg');
+	background-image: url('/img/back.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -876,7 +876,7 @@ section.plitka {
 }
 
 .turnkey-tender-support__banner {
-	background-image: url('/img/back.jpg');
+	background-image: url('/img/back.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center right;
