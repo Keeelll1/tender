@@ -876,23 +876,12 @@ section.plitka {
 }
 
 .turnkey-tender-support__banner {
-	background-image: url('img/back.png');
+	background-image: url(/img/back.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center right;
 	border-radius: 7px;
 	padding: 80px 0;
-}
-
-.turnkey-tender-support__banner--gray {
-	padding: 40px 40px;
-	background-image: url(/img/complex/bg_1920-4.jpg);
-	color: #272727;
-}
-
-.turnkey-tender-support__banner--black {
-	padding: 40px 40px;
-	background-image: url(/img/complex/bg_1920-3.jpg);
 }
 
 .turnkey-tender-support__block {
